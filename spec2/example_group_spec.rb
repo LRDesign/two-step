@@ -1,4 +1,4 @@
-require 'rspec-steps'
+require 'two-step'
 require 'rspec-sandbox'
 
 describe RSpec::Core::ExampleGroup do

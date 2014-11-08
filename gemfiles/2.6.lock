@@ -1,7 +1,7 @@
 PATH
   remote: ..
   specs:
-    rspec-steps (0.4.1)
+    two-step (0.4.1)
       rspec (>= 2.6, < 3.99)
 
 GEM
@@ -149,4 +149,4 @@ DEPENDENCIES
   corundum (>= 0.4.0)
   metric_fu (~> 4.11.1)
   rspec (~> 2.6.0)
-  rspec-steps!
+  two-step!

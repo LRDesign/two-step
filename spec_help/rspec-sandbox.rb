@@ -15,11 +15,11 @@ def sandboxed(&block)
   RSpec.instance_variable_set(:@configuration, new_config)
   RSpec.instance_variable_set(:@world, new_world)
 
-  load 'rspec-steps/duckpunch/example-group.rb'
+  load 'two-step/duckpunch/example-group.rb'
 
   object = Object.new
   object.extend(RSpec::Core::SharedExampleGroup)
-  object.extend(RSpec::Steps::DSL)
+  object.extend(TwoStep::DSL)
   object.extend(RSpec::Core::DSL)
 
   (class << RSpec::Core::ExampleGroup; self; end).class_eval do

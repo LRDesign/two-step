@@ -1,7 +1,7 @@
 require 'rspec/core'
-require 'rspec-steps/stepwise'
+require 'two-step/stepwise'
 
-module RSpec::Steps
+module TwoStep
   module DSL
     def steps(*args, &block)
       options =
@@ -19,9 +19,9 @@ module RSpec::Steps
   end
 end
 
-RSpec::Core::ExampleGroup.extend RSpec::Steps::DSL
+RSpec::Core::ExampleGroup.extend TwoStep::DSL
 
-extend RSpec::Steps::DSL
-Module::send(:include, RSpec::Steps::DSL)
+extend TwoStep::DSL
+Module::send(:include, TwoStep::DSL)
 
 RSpec::configuration.include(RSpecStepwise, :stepwise => true)

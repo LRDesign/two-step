@@ -1,5 +1,5 @@
-require 'rspec-steps/duckpunch/example-group'
-require 'rspec-steps/stepwise'
+require 'two-step/duckpunch/example-group'
+require 'two-step/stepwise'
 require 'rspec/core/shared_example_group'
 
 module RSpec::Core::SharedExampleGroup

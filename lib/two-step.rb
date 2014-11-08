@@ -1,3 +1,3 @@
-require 'rspec-steps/duckpunch/object-extensions'
-require 'rspec-steps/duckpunch/example-group'
-require 'rspec-steps/duckpunch/example'
+require 'two-step/duckpunch/object-extensions'
+require 'two-step/duckpunch/example-group'
+require 'two-step/duckpunch/example'
