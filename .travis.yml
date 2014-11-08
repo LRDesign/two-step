@@ -3,47 +3,44 @@ script: bundle exec rake ci
 install: .travis-support/cached-bundle install --deployment
 matrix:
   include:
-    - gemfile: gemfiles/2.6
-      rvm: 1.9.3
-    - gemfile: gemfiles/2.8
-      rvm: 1.9.3
-    - gemfile: gemfiles/2.10
-      rvm: 1.9.3
-    - gemfile: gemfiles/2.12
-      rvm: 1.9.3
-    - gemfile: gemfiles/2.14
-      rvm: 1.9.3
-    - gemfile: gemfiles/2.99
-      rvm: 1.9.3
-
-    - gemfile: gemfiles/2.6
-      rvm: 2.0.0
-    - gemfile: gemfiles/2.8
-      rvm: 2.0.0
-    - gemfile: gemfiles/2.10
-      rvm: 2.0.0
-    - gemfile: gemfiles/2.12
-      rvm: 2.0.0
-    - gemfile: gemfiles/2.14
-      rvm: 2.0.0
-    - gemfile: gemfiles/2.99
-      rvm: 2.0.0
-
-    - gemfile: gemfiles/2.6
-      rvm: 2.1.2
-    - gemfile: gemfiles/2.8
-      rvm: 2.1.2
-    - gemfile: gemfiles/2.10
-      rvm: 2.1.2
-    - gemfile: gemfiles/2.12
-      rvm: 2.1.2
-    - gemfile: gemfiles/2.14
-      rvm: 2.1.2
-    - gemfile: gemfiles/2.99
-      rvm: 2.1.2
-
+  - gemfile: gemfiles/2.6
+    rvm: 1.9.3
+  - gemfile: gemfiles/2.8
+    rvm: 1.9.3
+  - gemfile: gemfiles/2.10
+    rvm: 1.9.3
+  - gemfile: gemfiles/2.12
+    rvm: 1.9.3
+  - gemfile: gemfiles/2.14
+    rvm: 1.9.3
+  - gemfile: gemfiles/2.99
+    rvm: 1.9.3
+  - gemfile: gemfiles/2.6
+    rvm: 2.0.0
+  - gemfile: gemfiles/2.8
+    rvm: 2.0.0
+  - gemfile: gemfiles/2.10
+    rvm: 2.0.0
+  - gemfile: gemfiles/2.12
+    rvm: 2.0.0
+  - gemfile: gemfiles/2.14
+    rvm: 2.0.0
+  - gemfile: gemfiles/2.99
+    rvm: 2.0.0
+  - gemfile: gemfiles/2.6
+    rvm: 2.1.2
+  - gemfile: gemfiles/2.8
+    rvm: 2.1.2
+  - gemfile: gemfiles/2.10
+    rvm: 2.1.2
+  - gemfile: gemfiles/2.12
+    rvm: 2.1.2
+  - gemfile: gemfiles/2.14
+    rvm: 2.1.2
+  - gemfile: gemfiles/2.99
+    rvm: 2.1.2
 env:
   global:
   - CUSTOM_BUNDLE_PATH=gemfiles/vendor/bundle AMAZON_S3_BUCKET=lrd-travis-caching
-  - secure: b+5Ei+klIudmG+mWu2y6EgHZ/1GxOYX65jGskmQm85lahFUn9jVUn4IhDbERTmBGjjovZvAZ1cIzZg7hhOH2WRcWJX5My13KZv3hurz2jWeziIQp2LtURi7Ghah/1py+82oFTTQe/18A+ONGN7tksqAlWen/UOmfZzXpNPnyF9s=
-  - secure: FxV30BIED4dP/GkBGF8gtoWirzDzT0Gzn0GxocREp0BZAY9ti5YYoDQixPVCvtQCIKPUjUHnNd8KXdn0HtUhlgLhg7lEE03MoupsXoMZk8gNBeffcCRkzrpVBTmLEhdnoV3UNKpfn2+qCUSqqJimTarDe6k/7F5FzOl3R+xJgxw=
+  - secure: F1+Kpp+E8oIlm+nKQFstr+FZRbgsK5SqHhH8SCo1YO8FCvLgNtA9gX+9zxAXlvrjOtGBjzWi7olmoy9J7d22YqfyBkXKCLGAuu6Va0bP5m5lECQ3xBZyjJmNGjUzSICPlLJK80Kmok6hTF8PEPxhIOZqhnJdiqorY3bJfEE9l/4=
+  - secure: ZNktu7+Hk9L5V3LinXxgCeo8ZoYegVZ2v87QMpxvFuIPpZvBWzj/M9J1554Gp6DMkPPkcFVmJJqr6iiZYEdj+uFqcBEXj8lDk/Cfn2jg2IL/478F0d9+aelc5xm5JWeEiTziS5b8dM+Bs7VPuOEyayBkK7+LFpMPXoEwWevPzHs=
