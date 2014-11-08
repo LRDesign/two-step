@@ -35,7 +35,7 @@ end
 
 Dir['gemfiles/*'].delete_if{|path| path =~ /lock\z/ }.each do |gemfile|
   gemfile_lock = gemfile + ".lock"
-  file gemfile_lock => gemfile do
+  file gemfile_lock => [gemfile, "two-step.gemspec"] do
     Bundler.with_clean_env do
       sh "bundle install --gemfile #{gemfile}"
     end
