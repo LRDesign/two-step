@@ -11,6 +11,8 @@ matrix:
       rvm: 1.9.3
     - gemfile: gemfiles/2.14
       rvm: 1.9.3
+    - gemfile: gemfiles/2.99
+      rvm: 1.9.3
 
     - gemfile: gemfiles/2.6
       rvm: 2.0.0
@@ -20,6 +22,8 @@ matrix:
       rvm: 2.0.0
     - gemfile: gemfiles/2.14
       rvm: 2.0.0
+    - gemfile: gemfiles/2.99
+      rvm: 2.0.0
 
     - gemfile: gemfiles/2.6
       rvm: 2.1.2
@@ -29,6 +33,9 @@ matrix:
       rvm: 2.1.2
     - gemfile: gemfiles/2.14
       rvm: 2.1.2
+    - gemfile: gemfiles/2.99
+      rvm: 2.1.2
+
 env:
   global:
   - CUSTOM_BUNDLE_PATH=gemfiles/vendor/bundle AMAZON_S3_BUCKET=lrd-travis-caching
