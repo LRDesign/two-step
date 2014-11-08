@@ -92,7 +92,6 @@ module RSpecStepwise
       end
     end
 
-
     def before(*args, &block)
       if args.first == :step
         args.shift

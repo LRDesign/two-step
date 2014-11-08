@@ -29,7 +29,7 @@ Gem::Specification.new do |spec|
   lib/two-step/duckpunch/object-extensions.rb
   doc/README
   doc/Specifications
-  spec2/example_group_spec.rb
+  spec/example_group_spec.rb
   spec_help/spec_helper.rb
   spec_help/gem_test_suite.rb
   spec_help/rspec-sandbox.rb
