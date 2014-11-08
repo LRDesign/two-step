@@ -5,7 +5,7 @@ module Corundum
 
   tk = Toolkit.new do |tk|
     tk.file_lists.project = [__FILE__]
-    tk.file_lists.test << FileList["spec2/**/*.rb"]
+    tk.file_lists.test << FileList["spec/**/*.rb"]
   end
 
   tk.in_namespace do
@@ -17,8 +17,7 @@ module Corundum
     end
 
     rspec = RSpec.new(tk) do |rspec|
-      rspec.rspec_opts << "-O rspec2.conf"
-      rspec.files_to_run = "spec2"
+      rspec.files_to_run = "spec"
     end
     SimpleCov.new(tk, rspec) do |cov|
       cov.threshold = 75
