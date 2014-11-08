@@ -9,6 +9,8 @@ matrix:
       rvm: 1.9.3
     - gemfile: gemfiles/2.10
       rvm: 1.9.3
+    - gemfile: gemfiles/2.12
+      rvm: 1.9.3
     - gemfile: gemfiles/2.14
       rvm: 1.9.3
     - gemfile: gemfiles/2.99
@@ -20,6 +22,8 @@ matrix:
       rvm: 2.0.0
     - gemfile: gemfiles/2.10
       rvm: 2.0.0
+    - gemfile: gemfiles/2.12
+      rvm: 2.0.0
     - gemfile: gemfiles/2.14
       rvm: 2.0.0
     - gemfile: gemfiles/2.99
@@ -30,6 +34,8 @@ matrix:
     - gemfile: gemfiles/2.8
       rvm: 2.1.2
     - gemfile: gemfiles/2.10
+      rvm: 2.1.2
+    - gemfile: gemfiles/2.12
       rvm: 2.1.2
     - gemfile: gemfiles/2.14
       rvm: 2.1.2
