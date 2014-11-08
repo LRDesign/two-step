@@ -33,4 +33,16 @@ module Corundum
   end
 end
 
+Dir['gemfiles/*'].delete_if{|path| path =~ /lock\z/ }.each do |gemfile|
+  gemfile_lock = gemfile + ".lock"
+  file gemfile_lock => gemfile do
+    Bundler.with_clean_env do
+      sh "bundle install --gemfile #{gemfile}"
+    end
+  end
+
+  desc "Update all the bundler lockfiles for Travis"
+  task :travis_gemfiles => gemfile_lock
+end
+
 task :default => [:release, :publish_docs]
